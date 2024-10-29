@@ -1,0 +1,23 @@
+POST http://127.0.0.1:3000/auth/register
+Content-Type: application/json
+
+{
+    "name": "alison",
+    "email": "alison@vc.com",
+    "password": "123456"
+}
+
+## login sin conexion a la base de BDD
+
+
+POST http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "name": "valeria",
+    "email": "valeria@ac.com",
+    "password": "1234567"
+}
+
+### users
+GET http://127.0.0.1:3000/users
