@@ -15,11 +15,11 @@ POST http://127.0.0.1:3000/auth/login
 Content-Type: application/json
 
 {
-    "name": "valeria",
-    "email": "valeria@ac.com",
-    "password": "1234567"
+    "name": "alison",
+    "email": "alison@vc.com",
+    "password": "123456"
 }
 
 ### users
 GET http://127.0.0.1:3000/users
-Authorization: Bearer eyJhbGcioiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJl
+Authorization: Bearer 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MzAxNjc2MTUsImV4cCI6MTczMDE2NzY3NX0.FnjI0h2KDPTtTSVNwEBBZC9PrwZXFukI8K8JInLfuso'
