@@ -6,18 +6,16 @@ import { Categoria } from './entities/categoria.entity';
 
 @Injectable()
 export class CategoriaService {
-
   constructor(@Inject('CATEGORIA_REPOSITORY') private categoriaRepository:Repository<Categoria>){}
-
 
   create(createCategoriaDto: CreateCategoriaDto) {
     return 'This action adds a new categoria';
   }
 
-  async findAll(){
+   async findAll() {
     return await this.categoriaRepository.find();
   }
-  
+
   findOne(id: number) {
     return `This action returns a #${id} categoria`;
   }

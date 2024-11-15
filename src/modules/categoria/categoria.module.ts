@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { CategoriaService } from './categoria.service';
 import { CategoriaController } from './categoria.controller';
-import { categoriaProviders } from './categoria.provider';
+import { categoriaProvider } from './categoria.provider';
 import { DatabaseModule } from 'src/database/database.module';
 
 @Module({
-  imports:[DatabaseModule],
+  imports: [DatabaseModule],
   controllers: [CategoriaController],
-  providers: [CategoriaService, ...categoriaProviders],
+  providers: [CategoriaService, ...categoriaProvider],
 })
 export class CategoriaModule {}
